@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="sv"> 
+<head> 
+   
+    <title>Hotell</title> 
+
+    <meta charset = "utf-8" /> 
+
+    <link href = "../css/navigation.css" rel="stylesheet" type="text/css" /> 
+
+    <link href = "../css/spaimagescroll.css" rel="stylesheet" type="text/css" />
+
+    <link href="../css/hittahit.css" rel="stylesheet" type="text/css" />
+
+
+    <div class="topnav">
+      <a class="active" href="index.html">Hem</a>
+      <a href="hotell.html">Hotell</a>
+      <a href="spa.html">Spa</a>
+      <a href="bokning.html">Bokning</a>
+      <a href="hittahit.html">Hitta hit</a>
+    </div>
+    
+    <html>
+      <head>
+        <title>Add Map</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <script type="module" src="./index.js"></script>
+      </head>
+      <body>
+        <h3>Hitta till Mon Cochon!</h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
+    
+        <img src="../img/googlemaps.png" alt="Google Maps" width="900" height="600">
+
+
+        <!-- 
+         The `defer` attribute causes the callback to execute after the full HTML
+         document has been parsed. For non-blocking uses, avoiding race conditions,
+         and consistent behavior across browsers, consider loading using Promises
+         with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+        -->
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAqhranRjgwqYHIkxEaDGlOzFpbVHtmm8&callback=initMap&v=weekly"
+          defer
+        ></script>
+      </body>
+    </html>
