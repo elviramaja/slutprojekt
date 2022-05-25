@@ -177,3 +177,46 @@ body, html {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.header {
+  padding: 60px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+  background-color: lavender;
+}
+@media screen and (min-width: 420px) {
+
+  body {
+  
+  background: rgb(143, 56, 243); 
+  margin: auto;
+  
+  }
+  
+  }
+
+
+@media screen and (min-width: 794px) {
+
+    body {
+    
+    background: rgb(58, 18, 122); 
+    margin: auto;
+    
+    }
+    
+}
+@media screen and (min-width: 1020px) {
+
+      body {
+      
+      background: rgb(15, 6, 22); 
+      margin: auto;
+      max-width: 800px;
+      }
+      
+      }
